@@ -11,14 +11,14 @@ const LoginForm = () => {
     e.preventDefault(); 
 
     if (role === 'Customer') {
-      if ((username === 'Sushma' && password === '1234') || (username === 'Sumanth' && password === '1234') || (username === 'Vikas' && password === '1234')) {
+      if ((username === 'abcd' && password === '1234')) {
         alert('Customer login successful!');
         navigate('/home');
       } else {
         alert('Incorrect Customer username or password!');
       }
     } else if (role === 'Admin') {
-      if ((username === 'Sushma' && password === '1234') || (username === 'Sumanth' && password === '1234') || (username === 'Vikas' && password === '1234')) {
+      if ((username === 'abcd' && password === '1234')) {
         alert('Admin login successful!');
         navigate('/admin'); 
       } else {
@@ -82,7 +82,10 @@ const LoginForm = () => {
 
         <div className="flex items-center pt-4">
           <div className="flex-1 h-px bg-gray-700"></div>
-          {/* <p className="px-3 text-sm text-gray-400">Login with social accounts</p> */}
+          <p className="px-3 text-sm text-gray-400">Username : abcd</p>
+          <div className="flex-1 h-px bg-gray-700"></div>
+          <div className="flex-1 h-px bg-gray-700"></div>
+          <p className="px-3 text-sm text-gray-400">Password : 1234</p>
           <div className="flex-1 h-px bg-gray-700"></div>
         </div>
 
